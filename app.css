@@ -3,24 +3,6 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-#mainNavbar {
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-#mainNavbar .nav-link {
-    color: #7FB7BE;
-}
-
-#mainNavbar .nav-link:hover {
-    color: #026e7c; 
-}
-
-
-#mainNavbar .navbar-brand {
-    color: #895437; 
-}
-
 .btn {
     padding-inline: 1rem;
     border: 2px solid #0087ca;
@@ -37,6 +19,7 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
+    text-transform: lowercase;
 }
 
 .btn:after {
@@ -52,25 +35,6 @@ body {
     width: 50px;
     z-index: -10;
 }
-
-/* .btn:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.btn:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-} */
 
 .light {
     --clr-bg: #fcfcfc;
@@ -90,7 +54,11 @@ body {
 
 .about {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 2rem;
+}
+
+.about-contact {
+    margin-top: 1.5rem;
 }
 
 .center {
@@ -192,6 +160,10 @@ a, a:hover, a:active {
     height: 350px;
 }
 
+.project-title {
+    color: #7D1538;
+}
+
 .project-description {
     margin-top: 0.5rem;
 }
@@ -238,6 +210,112 @@ a, a:hover, a:active {
     margin-bottom: 1em;
 }
 
+.nav-list {
+    margin-right: 1.5rem;
+    display: flex;
+}
+
+.nav-list-item {
+    margin-left: 1.5rem;
+}
+
+#nav-item {
+    color: gray;
+    font-weight: 500;
+    transition: ease-in;
+}
+
+#nav-item:hover {
+    color: #0087ca;
+}
+
+#projects {
+    margin-top: 1.5rem;
+}
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: #fcfcfc;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
+  .hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0087ca;;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: white;
+  }
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .contact {
+      flex-direction: column;
+  }
+
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 4em;
+    background-color: transparent;
+}
+
+.footer {
+    padding: 2.5em 0;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
 h1 {
     font-size: 3.5rem;
     font-weight: bold;
@@ -257,6 +335,10 @@ h3 {
 
 h1, h2, h3 {
     color: #444;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
