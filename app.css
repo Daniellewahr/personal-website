@@ -1,0 +1,262 @@
+body {
+    background: white;
+    font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: #7FB7BE;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #026e7c; 
+}
+
+
+#mainNavbar .navbar-brand {
+    color: #895437; 
+}
+
+.btn {
+    padding-inline: 1rem;
+    border: 2px solid #0087ca;
+    border-radius: 0%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+
+/* .btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.btn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+.light {
+    --clr-bg: #fcfcfc;
+    --clr-bg-alt: #fff;
+    --clr-fg: #555;
+    --clr-fg-alt: #444;
+    --clr-primary: #2978b5;
+    --shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+.app {
+    font-family: "Poppins",sans-serif;
+    line-height: 1.5;
+    color: var(--clr-fg);
+    background-color: var(--clr-bg);
+}
+
+.about {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar.scrolled {
+    background: #0ec3ff;
+    transition: background 600ms;
+}
+
+.about-name {
+    color: #7D1538;
+}
+
+.header {
+    height: 8rem;
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.about-role {
+    margin-top: 0.5em;
+}
+
+.about-desc {
+    margin-top: 2.4rem;
+    max-width: 600px;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    color: #0087ca;
+}
+
+.link {
+    padding: 0 0 0.3em;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    padding-bottom: 0.5rem;
+  }
+  
+.link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #0087ca;
+  }
+
+.section {
+    margin-top: 5em;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.projects-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18em,1fr));
+    grid-gap: 2em;
+}
+
+.project {
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform .2s linear,-webkit-transform .2s linear;
+    width: 300px;
+    height: 350px;
+}
+
+.project-description {
+    margin-top: 0.5rem;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.2em 0;
+}
+
+.project-stack-item {
+    margin: 0.5em;
+    font-weight: 500;
+    font-size: .8rem;
+    color: var(--clr-fg-alt);
+}
+
+.skills-list {
+    max-width: 450px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-plain {
+    margin: 0.5em;
+    display: block;
+    cursor: pointer;
+    padding: 0.8em 1.4em;
+    font-weight: 500;
+    font-size: .9rem;
+    text-transform: none;
+    background-color: var(--clr-bg-alt);
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 15%);
+    border: 0;
+    transition: 0.3s;
+}
+
+.btn-plain:hover {
+    margin-top: 0%;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.6;
+    
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+
