@@ -85,6 +85,10 @@ body {
 
 }
 
+.header h3 {
+    margin-bottom: 1rem;
+}
+
 .about-role {
     margin-top: 0.5em;
 }
@@ -174,10 +178,6 @@ a, a:hover, a:active {
 .project-title {
     color: #7D1538;
     transition: ease-in;
-}
-
-.project-link {
-    margin-bottom: 5em;
 }
 
 .project-description {
@@ -377,6 +377,41 @@ h1, h2, h3 {
 
 ul {
     list-style-type: none;
+}
+
+@media(max-width:798px) {
+
+    .about {
+        margin-top: 10px;
+    }
+
+    .about h1 {
+        font-size: 2em;
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+    .about h2 {
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+
+    .about p {
+        justify-content: center;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #projects {
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .project {
+        width: 400px;
+        height: 280px;
+    }
+
 }
 
 
