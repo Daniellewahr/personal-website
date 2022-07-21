@@ -204,12 +204,13 @@ ul {
 }
 
 .skills-list {
+    justify-content: center;
+    padding-right: 2em;
     max-width: 450px;
     width: 95%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .btn-plain {
