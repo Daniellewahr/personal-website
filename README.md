@@ -11,4 +11,4 @@ Many updates coming in the near future.
 - Update skills
 - Create sticky navbar 
 - Add resume 
-- Update to appropraite version number using version number practices 
+- Update to appropriate version number using version number practices 
